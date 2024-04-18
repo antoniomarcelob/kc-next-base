@@ -3,7 +3,7 @@ import keycloak from "next-auth/providers/keycloak"
 
  
 export const { handlers, signIn, signOut, auth } = NextAuth({
-  secret: "6X2au6Tf/qmoixdI7hISlPSBTlzb8HVy55ctOf2jF9Y=",
+  secret: "", // AUTH_SECRET here
   providers: [keycloak({
     profile(profile) {
       // that profile parameter have the user info that comes from keycloak. If you want to change some of that info, go to your keycloak > client scopes > profile > mappers
